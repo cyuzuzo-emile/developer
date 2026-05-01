@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>About | Cyuzuzo Emile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="stars-canvas"></canvas>
+<nav>
+  <div class="nav-container">
+    <div class="logo"> Cyuzuzo.dev</div>
+    <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<main>
+  <section class="page-section">
+    <div class="container fade-in-element">
+      <h2 class="section-title">About Me</h2>
+      <div class="split-grid">
+        <div>
+          <p>I am <strong>Cyuzuzo Emile</strong>, a Full Stack Developer focused on crafting modern, secure, and accessible web applications. My work combines polished interfaces with strong architecture and maintainable backend services.</p>
+          <p>I enjoy working with teams, building solutions that scale, and exploring ethical hacking concepts to make software more resilient.</p>
+          <p>Outside of code, I love learning about system security, cloud infrastructure, and how emerging technology shapes user experience.</p>
+        </div>
+        <div>
+          <div class="info-card">
+            <h3><i class="fas fa-tools"></i> Core Toolkit</h3>
+            <div class="skills-list">
+              <span class="skill-badge">React</span>
+              <span class="skill-badge">Node.js</span>
+              <span class="skill-badge">Express</span>
+              <span class="skill-badge">MongoDB</span>
+              <span class="skill-badge">REST APIs</span>
+              <span class="skill-badge">Ethical Hacking</span>
+              <span class="skill-badge">UI/UX Basics</span>
+            </div>
+          </div>
+          <div class="info-card" style="margin-top:1.5rem;">
+            <h3><i class="fas fa-graduation-cap"></i> Journey</h3>
+            <p>📘 Full Stack Web Development Certification (2023–2025)</p>
+            <p>🚀 Open source contributor & freelance web developer</p>
+            <p>🛡️ Continual study in cybersecurity and secure development practices</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section fade-in-element" hidden>
+    <div class="container">
+      <h2 class="section-title">Photo Posts</h2>
+      <div class="photo-post-area">
+        <div class="photo-upload-card">
+          <p>Share a new photo from your work or dev journey.</p>
+          <form id="photoPostForm">
+            <div class="form-group">
+              <label for="photoCaption">Caption</label>
+              <textarea id="photoCaption" rows="3" placeholder="Write a short caption..."></textarea>
+            </div>
+            <div class="form-group">
+              <label for="photoFile">Choose photo</label>
+              <input type="file" id="photoFile" accept="image/*">
+            </div>
+            <div class="photo-upload-preview" id="photoPreview" hidden>
+              <img src="" alt="Preview">
+              <div>
+                <p class="preview-label">Preview ready</p>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin-top:1rem;">Post Photo</button>
+          </form>
+        </div>
+        <div>
+          <div class="photo-gallery" id="photoGallery"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container footer-links">
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>© 2026 Cyuzuzo Emile. Full Stack Developer.</p>
+  </div>
+</footer>
+<script defer src="scripts.js"></script>
+</body>
+</html>
